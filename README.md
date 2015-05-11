@@ -1,7 +1,7 @@
 # Docker Container for Nexus
 
 
-This is conainter for [nexus][1]. The container uses [supervisord][2] to run both nexus and an ssh server.
+This is conainter for [nexus][1].
 
 The file nexus.conf is an upstart job for ubuntu.
 
@@ -15,13 +15,12 @@ The file nexus.conf is an upstart job for ubuntu.
 ## To Run
 
 ```
->  docker run --name="nexus-server" -t -i \
-                -v /data/files/nexus/:/data \
-                -v /data/tvshows:/volume1/tvshows \
-                -v /data/files/nzbget:/nzbget \
-                -p 8083:8083 nexus
+>    /usr/bin/docker run -a stdout --rm  --name=nexus-server \
+                       --privileged \
+                      -p 8081:8081 \
+                      -v /data/files/nexus/sonatype-work/:/u01/sonatype-work/ \
+                      192.168.1.178:5000/nexus
 ```
 
 [1]:  https://github.com/echel0n/SickRage
-[2]:  http://supervisord.org/
 
