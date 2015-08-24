@@ -1,9 +1,7 @@
 # Docker Container for Nexus
 
 
-This is conainter for [nexus][1]. The container uses [supervisord][2] to run both nexus and an ssh server.
-
-The file nexus.conf is an upstart job for ubuntu.
+This is conainter for [nexus][1]. 
 
 ## To Build
 
@@ -22,6 +20,6 @@ The file nexus.conf is an upstart job for ubuntu.
                 -p 8083:8083 nexus
 ```
 
-[1]:  https://github.com/echel0n/SickRage
-[2]:  http://supervisord.org/
+[1]:  http://www.sonatype.org/nexus/go/
+
 
