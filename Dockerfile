@@ -1,4 +1,4 @@
-FROM docker.gillsoft.org/ubuntu-base
+FROM docker.gillsoft.org/ubuntu-java8
 
 MAINTAINER Ronan Gill <ronan.gill@gillsoft.org>
 
