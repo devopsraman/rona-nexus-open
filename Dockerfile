@@ -2,7 +2,7 @@ FROM docker.gillsoft.org/ubuntu-java8
 
 MAINTAINER Ronan Gill <ronan.gill@gillsoft.org>
 
-ENV NEXUS_VERSION 2.11.4-01
+ENV NEXUS_VERSION 2.13.0-01
 
 ADD https://download.sonatype.com/nexus/oss/nexus-${NEXUS_VERSION}-bundle.tar.gz /u01/
 
